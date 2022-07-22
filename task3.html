@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>TEMPERATURE CONVERSION</title>
+        <link rel="stylesheet" href="task_3.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="input_box">
+                <label for="celsius">Celsius</label>
+                <input type="number" id="inputcelsius" oninput="celTofar(this.value)" placeholder="Enter temp in celsius" onchange="celTofar(this.value)">
+                <p>Fahrenheit: <span id="outputfahrenheit"></span></p>
+            </div>
+            <div class="input_box">
+                <label for="fahrenheit">Fahrenheit</label>
+                <input type="number" id="inputfahrenheit" oninput="farToCel(this.value)" placeholder="Enter temp in fahrenheit" onchange="fartoCel(this.value)">
+                <p>Celsius: <span id="outputCelsius"></span></p>
+            </div>
+        </div>
+        <script src="tas_3.js"></script>
+    </body>
+</html>
